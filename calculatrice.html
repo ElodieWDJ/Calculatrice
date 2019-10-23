@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <div id="contour" class="container">
+
+
+        <input id="ecran" onfocus="this.value=''"  type="text"> <br>
+
+        <button onclick="suprimerValeur()" class="btn btn-outline-danger"> C </button>
+        <button onclick="ajouterValeur('(')" class="btn btn-outline-info"> ( </button>
+        <button onclick="ajouterValeur(')')" class="btn btn-outline-info"> ) </button>
+        <button onclick="ajouterValeur('+')" class="btn btn-outline-info"> + </button><br>
+
+
+
+        <button onclick="ajouterValeur(7)" class="btn btn-outline-info"> 7 </button>
+        <button onclick="ajouterValeur(8)" class="btn btn-outline-info"> 8 </button>
+        <button onclick="ajouterValeur(9)" class="btn btn-outline-info"> 9 </button>
+        <button onclick="ajouterValeur('-')" class="btn btn-outline-info"> - </button><br>
+
+        <button onclick="ajouterValeur(4)" class="btn btn-outline-info"> 4 </button>
+        <button onclick="ajouterValeur(5)" class="btn btn-outline-info"> 5 </button>
+        <button onclick="ajouterValeur(6)" class="btn btn-outline-info"> 6 </button> 
+        <button onclick="ajouterValeur('*')" class="btn btn-outline-info"> * </button><br>
+
+        <button onclick="ajouterValeur(1)" class="btn btn-outline-info"> 1 </button>
+        <button onclick="ajouterValeur(2)" class="btn btn-outline-info"> 2 </button> 
+        <button onclick="ajouterValeur(3)" class="btn btn-outline-info"> 3 </button>
+        <button onclick="ajouterValeur('/')" class="btn btn-outline-info"> / </button><br>
+
+        <button onclick="ajouterValeur(0)" class="btn btn-outline-info"> 0 </button> 
+        <button onclick="pourcentage(100)" class="btn btn-outline-info"> % </button>
+        <button onclick="ajouterValeur(',')" class="btn btn-outline-info"> , </button>
+        <button onclick="calculer('=')" class="btn btn-outline-info"> = </button>
+
+    </div>
+
+    <script type="text/javascript" src="calculatrice.js"></script>
+</body>
+
+
+
+</html>
